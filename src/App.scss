@@ -1,0 +1,30 @@
+@import './Styles/Variables.module.scss';
+
+h1{
+    color: $base-Tcolor;
+    font-size: $Primary-Dheading;
+    @media screen and (max-width: 720px) {
+        font-size: $Primary-Mheading;
+    }
+}
+h2{
+    color: $base-Tcolor;
+    font-size: $Primary-Dheading;
+    @media screen and (max-width: 720px) {
+        font-size: $Primary-Mheading;
+    }
+}
+h1{
+    color: $base-Tcolor;
+    font-size: $Primary-Dheading;
+    @media screen and (max-width: 720px) {
+        font-size: $Primary-Mheading;
+    }
+}
+h1{
+    color: $base-Tcolor;
+    font-size: $Primary-Dheading;
+    @media screen and (max-width: 720px) {
+        font-size: $Primary-Mheading;
+    }
+}
