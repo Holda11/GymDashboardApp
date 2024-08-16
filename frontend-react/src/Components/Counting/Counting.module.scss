@@ -1,0 +1,20 @@
+@import '../../Styles/Variables.module.scss';
+
+.Counting{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 12px;
+    width: 100%;
+    height: 100%;
+    &__Chart{
+        width: 100%;
+        height: 100%;
+    }
+    &__Row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
