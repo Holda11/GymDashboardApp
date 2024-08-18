@@ -3,12 +3,14 @@ const Box =[
         id: 1,
         name: 'Začátečníky',
         start: 2,
-        index: [2,3]
+        index: [2,3],
+        date: Date
     },{
         id: 2,
         name: 'Pokročilý',
         start: 4,
-        index: [4,5]
+        index: [4,5],
+        date: Date
     }
 ]
 

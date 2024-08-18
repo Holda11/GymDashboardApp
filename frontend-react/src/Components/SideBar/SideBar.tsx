@@ -21,14 +21,14 @@ const Sidebar = () => {
               <div> 
                 <li><Link className={style["Link"]} to="/"><FaBorderAll />Dashboard</Link></li>
                 <li><Link className={style["Link"]} to="/cashbox"><FaCashRegister /> CashBox</Link></li>
-                <li><Link className={style["Link"]} to="/"><FaInbox /> Inventory</Link></li>
+                <li><Link className={style["Link"]} to="/inventory"><FaInbox /> Inventory</Link></li>
                 <li><Link className={style["Link"]} to="/"><FaPlane /> Vacation</Link></li>
               </div>
             </li>
             {/*Clases Section*/}
             <li>
               <div>
-                <li><Link className={style["Link"]} to="/"><FaHandFist /> Box</Link></li>
+                <li><Link className={style["Link"]} to="/classes"><FaHandFist /> Box</Link></li>
                 <li><Link className={style["Link"]} to="/"><FaPersonRunning /> Cardio</Link></li>
               </div>
             </li>

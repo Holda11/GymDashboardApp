@@ -1,0 +1,28 @@
+@import '../../Styles/Variables.module.scss';
+
+.Inventory{
+    padding: 6px 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Table{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    tr{
+        font-size: 1.5rem;
+    }
+    th{
+        align-items: flex-start;
+        padding: 12px;
+    }
+    td{
+      text-align: center;
+    }
+}
