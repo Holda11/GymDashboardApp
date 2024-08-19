@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import style from './CashboxTable.module.scss'
 import Data from '../../Supports/Data/Inventory.js'
 import Entries from '../../Supports/Data/Entries.js'
@@ -9,10 +9,6 @@ const CashboxTable = () => {
     const [revenuePermission, setRevenuePermission] = useState(0)
     const [revenueBar, setRevenueBar] = useState(0)
     
-
-    useEffect(()=>{
-
-    }, [])
     
 
     const renderInvetory = (Inventory) => {
