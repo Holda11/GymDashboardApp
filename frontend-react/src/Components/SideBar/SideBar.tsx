@@ -22,14 +22,13 @@ const Sidebar = () => {
                 <li><Link className={style["Link"]} to="/"><FaBorderAll />Dashboard</Link></li>
                 <li><Link className={style["Link"]} to="/cashbox"><FaCashRegister /> CashBox</Link></li>
                 <li><Link className={style["Link"]} to="/inventory"><FaInbox /> Inventory</Link></li>
-                <li><Link className={style["Link"]} to="/"><FaPlane /> Vacation</Link></li>
               </div>
             </li>
             {/*Clases Section*/}
             <li>
               <div>
-                <li><Link className={style["Link"]} to="/classes"><FaHandFist /> Box</Link></li>
-                <li><Link className={style["Link"]} to="/"><FaPersonRunning /> Cardio</Link></li>
+                <li><Link className={style["Link"]} to="/classes/1"><FaHandFist /> Box</Link></li>
+                <li><Link className={style["Link"]} to="/classes/2"><FaPersonRunning /> Cardio</Link></li>
               </div>
             </li>
             {/*Help&Settings Section*/}

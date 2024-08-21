@@ -6,26 +6,25 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cashbox from './Views/Cashbox.tsx';
 import Inventory from './Views/Inventory.tsx';
 import Classes from './Views/Classes.tsx';
+import { ModalProvider } from './Components/Modal/Modal.tsx';
+import Information from './Components/Information/Information.tsx';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-      <Sidebar />
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-        <Routes>
-          <Route path="/cashbox" element={<Cashbox />} />
-        </Routes>
-        <Routes>
-          <Route path="/inventory" element={<Inventory />} />
-        </Routes>
-        <Routes>
-          <Route path="/classes" element={<Classes />} />
-        </Routes>
-      </Router>
-    </div>
+        <Router>
+        <ModalProvider>
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/cashbox" element={<Cashbox />} />
+            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/classes/:id" element={<Classes />} />
+          </Routes>
+          <Information/>
+        </ModalProvider>
+        </Router>
+      </div>
   );
 }
 

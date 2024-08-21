@@ -1,7 +1,7 @@
 export default interface IInventory {
-        id: number;
-  name: string;
-  category: string;
-  price: number;
-  qty: number;
+        id: number,
+        Name: string,
+        Category: string,
+        Price: number,
+        Quantity: number
 }

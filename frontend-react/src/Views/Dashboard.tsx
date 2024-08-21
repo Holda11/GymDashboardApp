@@ -2,25 +2,28 @@ import React from 'react'
 import Counting from '../Components/Counting/Counting.tsx'
 import PopularClass from '../Components/PopularClass/PopularClass.tsx'
 import Timeline from '../Components/Timeline/Timeline.tsx'
-import ProfileWidget from '../Components/ProfileWidget/ProfileWidget.tsx'
-import Challenges from '../Components/Challenges/Challenges.tsx'
 import style from './Styling/Dashboard.module.scss'
-import Calendar from '../Components/Calendar/Calendar.tsx'
+import { FaInbox } from 'react-icons/fa'
+import { FaMessage } from 'react-icons/fa6'
 
 const Dashboard = () => {
     return (
         <div className={style['Dashboard']}>
-            <div className={style['Dashboard__Left']}>
+            <div className={style['Dashboard__Column']}>
+                <div className={style['Dashboard__Text']}>
+                    <h2>Ahoj Joe, jak se dneska máte?</h2>
+                    <div className={style['Gap']}>
+                        <FaInbox className={style['Icon']}/>
+                        <FaMessage className={style['Icon']}/>
+                    </div>
+                </div>
                 <div className={style['Row']}>
                     <Counting />
                     <PopularClass />
                 </div>
+                <div className={style['Dashboard__Bottom']}>
                 <Timeline />
-            </div>
-            <div className={style['Dashboard__Right']}>
-                <ProfileWidget />
-                <Calendar />
-                <Challenges />
+                </div>
             </div>
         </div>
     )

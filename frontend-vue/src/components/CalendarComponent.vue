@@ -1,10 +1,10 @@
-<script setup lang="tsx">
+<script setup lang="jsx">
 import { ref, watchEffect } from 'vue';
 
 const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const currentDate = ref(new Date());
 
-function setCurrentDate(newValue: Date) {
+function setCurrentDate(newValue) {
     currentDate.value = newValue;
 }
 
@@ -80,9 +80,49 @@ const Calendar = () => {
 </script>
 
 <template>
-    <Calendar />
+    <Calendar/>
 </template>
 
 <style lang="scss">
-/* CSS styles here */
+@import '../assets/styles/variables.scss';
+.Calendar{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 12px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    &__Header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: $highlight-Tcolor;
+        }
+    }
+    &__Table{
+        &--Days{
+            color: $highlight-Tcolor;
+            font-weight: 500;
+            padding: 6px;
+            text-align: center;
+            font-size: 20px;
+        }
+        &--Number{
+            padding: 4px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
 </style>

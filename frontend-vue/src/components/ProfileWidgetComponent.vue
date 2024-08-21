@@ -1,10 +1,6 @@
-<script setup lang="tsx">
-interface InformationProps {
-  heading: string;
-  information: string;
-  styleClass: string;  // Použití "styleClass" namísto "style"
-}
-const Info = ({heading, information, styleClass}: InformationProps) =>{
+<script setup lang="jsx">
+
+const Info = ({heading, information, styleClass}) =>{
         return(
             <div class={styleClass}>
                 <h5>{heading}</h5>
@@ -40,7 +36,7 @@ const Info = ({heading, information, styleClass}: InformationProps) =>{
 @import '../assets/styles/variables.scss';
 @import '../assets/styles/mixin.scss';
 
-.ProfileWidget {
+.ProfileWidget{
     height: fit-content;
     padding: 6px 12px;
     border: 1px solid #c5c5c5;
@@ -48,26 +44,27 @@ const Info = ({heading, information, styleClass}: InformationProps) =>{
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__Row {
+    background-color: #fff;
+    &__Row{
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        &-Gap {
+        &-Gap{
             gap: 10px;
         }
-        button {
+        button{
             color: #fff;
             font-weight: 500;
             background: $highlight-Bgcolor;
             padding: 6px 12px;
         }
     }
-    &__ImageContainer {
+    &__ImageContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        img {
+        img{
             width: 92px;
             height: 92px;
             object-fit: cover;
@@ -75,27 +72,51 @@ const Info = ({heading, information, styleClass}: InformationProps) =>{
             border: 4px solid $highlight-Bgcolor;
         }
     }
+    
 }
-.Information__left, .Information__center, .Information__right {
+.Information__left{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6px;
     margin: 8px;
     background-color: $secondary-Bgcolor;
-    h5 {
+    border-radius: 12px 0 0 12px;
+    h5{
         font-weight: 400;
     }
-    strong {
+    strong{
+        margin: 6px 2px;
+    }
+}
+.Information__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    margin: 8px;
+    background-color: $secondary-Bgcolor;
+    h5{
+        font-weight: 400;
+    }
+    strong{
+        margin: 6px 2px;
+    }
+}
+.Information__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    margin: 8px;
+    background-color: $secondary-Bgcolor;
+    border-radius: 0 12px 12px 0;
+    h5{
+        font-weight: 400;
+    }
+    strong{
         margin: 6px 2px;
     }
 }
 
-.Information__left {
-    border-radius: 12px 0 0 12px;
-}
-
-.Information__right {
-    border-radius: 0 12px 12px 0;
-}
 </style>

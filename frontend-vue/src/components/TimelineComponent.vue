@@ -1,4 +1,4 @@
-<script setup lang="tsx">
+<script setup lang="jsx">
 import Data from '@/Supports/Data/TimelineClasses'
 const hoursOfShift = ['6:00', '8:00', '10:00', '12:00', '14:00', '16:00', '18:00', '20:00', '22:00',]
 
@@ -6,7 +6,7 @@ const renderHours = () => {
     return hoursOfShift.map((hour) => <th>{hour}</th>)
 }
 
-const renderCard = (key: number) => {
+const renderCard = (key) => {
     const cards = [];
     const boxData = Data.find(item => item.id === key)?.items;
 
@@ -73,7 +73,7 @@ const Timeline = () => {
     padding: 6px 14px;
     border: 1px solid #c5c5c5;
     border-radius: 10px;
-    width: 100%;
+    
 
     &__Row {
         display: flex;

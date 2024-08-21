@@ -14,16 +14,15 @@ import { RouterLink } from 'vue-router'
             </li>
             <li>
               <div> 
-                <li><a>Dashboard</a></li>
-                <li><a>CashBox</a></li>
-                <li><a>Inventory</a></li>
-                <li><a>Vacation</a></li>
+                <li><RouterLink to="/">Dashboard</RouterLink></li>
+                <li><RouterLink to="/cashbox">CashBox</RouterLink></li>
+                <li><RouterLink to="/inventory">Inventory</RouterLink></li>
               </div>
             </li>
             <li>
               <div>
-                <li><a>Box</a></li>
-                <li><a>Cardio</a></li>
+                <li><RouterLink to="/classes/1">Box</RouterLink></li>
+                <li><RouterLink to="/classes/2">Cardio</RouterLink></li>
               </div>
             </li>
             <li>
@@ -43,9 +42,9 @@ import { RouterLink } from 'vue-router'
 
 .Nav{
     display: flex;
-    min-height: 10vh;
+    min-height: 100vh;
     border-right: 1px solid rgb(211, 209, 209);
-    min-width: 10vw;
+    min-width: fit-content;
     &__Items{
         min-height: 90vh;
         display: flex;
@@ -69,5 +68,6 @@ import { RouterLink } from 'vue-router'
         flex-direction: column;
         align-items: flex-start;
     }
-  }
+    
+}
 </style>

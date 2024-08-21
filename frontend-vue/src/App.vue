@@ -1,22 +1,21 @@
-<script setup lang="ts">
+<script setup>
 import { RouterView } from 'vue-router'
-import SideBar from './components/SideBarComponent.vue'
-
-
+import SideBarComponent from './components/SideBarComponent.vue';
+import InformationComponent from './components/InformationComponent.vue';
 </script>
 
 <template>
-  <div class="App">
-    <SideBar />
-    <div>
-      <RouterView />
-    </div>
-  </div>
+    <main class="Main">
+        <SideBarComponent/>
+            <RouterView/>
+        <InformationComponent/>
+    </main>
 </template>
 
-<style>
-.App {
-  display: flex;
-  flex-direction: row;
+<style scoped lang="scss">
+.Main{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
 }
 </style>

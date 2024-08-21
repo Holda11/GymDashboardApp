@@ -1,19 +1,20 @@
-import {Box, Cardio} from './TimelineClasses'
+import Box from './TimelineClasses.js'
+import Cardio from './TimelineClasses.js'
 
-const Classes = [
+const CType = [
     {
         id: 1,
-        name: 'Cardio',
-        description: 'Tady je jednoduchý description',
-        dates: Box,
-
+        name: 'Boxing',
+        description: 'Tady je page o Boxing',
+        item: Cardio,
     },
     {
         id: 2,
-        name: 'Boxing',
-        description: '',
-        dates: Cardio,
+        name: 'Cardio',
+        description: 'Tady je page o Cardio',
+        item: Box,
+
     }
 ]
 
-export default Classes
+export default CType

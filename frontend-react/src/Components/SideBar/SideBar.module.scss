@@ -4,7 +4,7 @@
     display: flex;
     min-height: 100vh;
     border-right: 1px solid rgb(211, 209, 209);
-    min-width: 10vw;
+    min-width: fit-content;
     &__Items{
         min-height: 90vh;
         display: flex;

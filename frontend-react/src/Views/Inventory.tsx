@@ -1,9 +1,15 @@
 import React from 'react'
 import InventoryComponent from '../Components/Inventory/Inventory.tsx'
+import style from './Styling/Inventory.module.scss'
 
 const Inventory = () => {
   return (
-    <div><InventoryComponent /></div>
+    <div className={style['InventoryView']}>
+      <div>
+
+      <InventoryComponent/>
+      </div>
+      </div>
   )
 }
 
